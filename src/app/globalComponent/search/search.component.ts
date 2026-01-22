@@ -2,7 +2,8 @@ import { RootService } from '../../root.service';
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
 import { AppState } from '../../app.state';
 
-import { ObserveOnMessage } from 'rxjs/internal/operators/observeOn';
+// import { ObserveOnMessage } from 'rxjs/internal/operators/observeOn';
+import { observeOn } from 'rxjs/operators';
 
 
 

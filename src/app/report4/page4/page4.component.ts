@@ -4,7 +4,7 @@ import * as echarts from 'echarts';
 import { RootService } from '../../root.service';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { DialogComponent } from 'src/app/globalComponent/dialog/dialog.component';
-import { Angular2Csv } from 'angular2-csv';
+import { AngularCsv } from 'angular-csv-ext';
 
 @Component({
   selector: 'app-page4',
@@ -77,7 +77,7 @@ exportAsCSVcub(allDataToExport,nameKotar) {
     title           : titleCsv,
     useBom          : true,
 };
-return new Angular2Csv(tableToExport, nameKotar,options);
+return new AngularCsv(tableToExport, nameKotar, options);
 }
  
 exportAsCSV(allDataToExport,nameKotar,showMdd) { 
@@ -120,7 +120,7 @@ exportAsCSV(allDataToExport,nameKotar,showMdd) {
     title           : titleCsv,
     useBom          : true,
 };
-return new Angular2Csv(tableToExport, nameKotar,options);
+return new AngularCsv(tableToExport, nameKotar,options);
 }
   // get pngAcademicColor(): string {      
   //   return  this.appStore.selectmdd.name;

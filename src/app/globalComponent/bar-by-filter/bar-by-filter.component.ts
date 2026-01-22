@@ -2,7 +2,7 @@
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
 import { RootService } from 'src/app/root.service';
 import { AppState, FilterData } from 'src/app/app.state';
-import { Angular2Csv } from 'angular2-csv';
+import { ngxCsv } from 'ngx-csv';
 
 
 
@@ -85,6 +85,6 @@ export class barByFilterComponent implements OnInit {
     title           : titleCsv,
     useBom          : true,
 };
-return new Angular2Csv(tableToExport, nameKotar,options);
+return new ngxCsv(tableToExport, nameKotar, options);
 }
 }

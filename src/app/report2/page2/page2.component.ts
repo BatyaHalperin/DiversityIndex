@@ -23,7 +23,6 @@ export class Page2Component implements OnInit {
   ngOnInit() {
     this.height =  window.innerHeight-185; 
     this.appStore.selectmdd = null;
-
   }
 
 

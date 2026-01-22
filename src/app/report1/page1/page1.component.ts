@@ -3,9 +3,9 @@ import { AppState } from '../../app.state';
 import * as echarts from 'echarts';
 import { RootService } from '../../root.service';
 import { DatatableComponent, TableColumn } from '@swimlane/ngx-datatable';
-import { Angular2Csv } from 'angular2-csv';
+import { AngularCsv } from 'angular-csv-ext';
 import { NgZone } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogComponent } from 'src/app/globalComponent/dialog/dialog.component';
 
 
@@ -139,7 +139,7 @@ export class Page1Component implements OnInit {
       title           : titleCsv,
       useBom          : true,
   };
-  return new Angular2Csv(tableToExport, nameKotar,options);
+  return new AngularCsv(tableToExport, nameKotar,options);
   }
    
   openAgdarotMadd()

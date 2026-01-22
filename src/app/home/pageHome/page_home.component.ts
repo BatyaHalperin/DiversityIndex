@@ -2,7 +2,7 @@
 import { RootService } from './../../root.service';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { AppState } from '../../app.state';
-import { MatDialogConfig, MatDialog } from '@angular/material';
+import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from 'src/app/globalComponent/dialog/dialog.component';
 
 
@@ -29,7 +29,6 @@ export class PageHomeComponent implements OnInit {
   } 
   get numAllAcadmic(): any {    
     return   this.appStore.homePageSumData.filter(x=>x.IfAcademic_id === 2);
-                                               
   } 
   get numAllNoAcadmic(): any {      
     return   this.appStore.homePageSumData.filter(x=>x.IfAcademic_id === 3)

@@ -3,9 +3,9 @@ import { AppState, FilterData, factData } from '../app.state';
 import * as echarts from 'echarts';
 import { RootService } from '../root.service';
 import { DatatableComponent, TableColumn } from '@swimlane/ngx-datatable';
-import { Angular2Csv } from 'angular2-csv';
+import { AngularCsv } from 'angular-csv-ext';
 import { Router } from '@angular/router';
-import { MatDialogRef, MatDialogConfig, MatDialog } from '@angular/material';
+import { MatDialogRef, MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { DialogAlertComponent } from '../globalComponent/dialog-alert/dialog-alert.component';
 import { ReCaptchaV3Service } from 'ng-recaptcha';
 
@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
      }
 
   ngOnInit() {
+    console.log(this.appStore.homePageSumData, "appStore.homePageSumData");
+    
     this.height =  window.innerHeight-132;
     //this.dialogOpenSite();
    // this.width =  window.innerWidth;

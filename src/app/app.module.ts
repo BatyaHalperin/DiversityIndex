@@ -2,14 +2,9 @@ import {ChartModule} from 'primeng/chart';
 import {TableModule} from 'primeng/table';
 import {InputSwitchModule} from 'primeng/inputswitch';
 
-
-
-
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { CacheService } from 'ng2-cache';
-
 import { NgModule , NO_ERRORS_SCHEMA } from '@angular/core';
 import { ScrollToModule } from 'ng2-scroll-to-el';
 import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';

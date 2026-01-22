@@ -1,5 +1,5 @@
 <div class="content" style="width: 100%; "  [ngStyle]="{'height': height + 'px' }">
-<div class="loader" *ngIf="appStore.givunGroupFilterData?.length===0"></div>
+<div class="loader" *ngIf="appStore.givunGroupFilterData"></div>
 <table *ngIf="appStore.givunGroupFilterData?.length===5" dir="rtl"  style="width: 100%;"  [ngStyle]="{'height': 100 + '%' }"  >
     <tr >
           <td width="12%" height="100%"  > 

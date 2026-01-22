@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AppState } from '../../app.state';
 import { RootService } from '../../root.service';
-import { Angular2Csv } from 'angular2-csv';
+import { AngularCsv } from 'angular-csv-ext';
 
 
 @Component({
@@ -69,7 +69,7 @@ export class GrafAcademicComponent implements OnInit {
       title           : titleCsv,
       useBom          : true,
   };
-  return new Angular2Csv(tableToExport, nameKotar,options);
+  return new AngularCsv(tableToExport, nameKotar,options);
   }
   get stateCount_emp(): any {
     return this.appStore.factAllData.filter(x=>x.ifAcademicid === this.isAcademic)
