@@ -457,7 +457,8 @@ export class RootService {
         });
     });   
     this.appStore.homePageSumAllData = res;
-   });
+   });  
+   
   }); 
   } catch (error) {
   }
